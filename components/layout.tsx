@@ -28,7 +28,7 @@ export default function Layout({
 				<>
 						<Image
 							priority
-							src="/beer.svg"
+							src="/brewlog-logo.svg"
 							height={144}
 							width={144}
 							alt={name}
@@ -42,7 +42,7 @@ export default function Layout({
 						<a>
 							<Image
 								priority
-								src="/beer.svg"
+								src="/brewlog-logo.svg"
 								height={88}
 								width={88}
 								alt={name}
