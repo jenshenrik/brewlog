@@ -11,6 +11,9 @@
 	background-color: #008080; /* https://www.color-hex.com/color-palette/4666 */
 }
 
+.header .container {
+	text-align: center;
+}
 .backToHome {
 	margin: 3rem 0 0;
 }
