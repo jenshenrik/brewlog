@@ -38,6 +38,13 @@ export function getSortedBrewsData() {
 	})
 }
 
+export function getBeerCodesAndBatches() {
+	const metaData = getAllBrewMetaData();
+	return metaData.map(m => {
+		return {beer_code: m.beer_code, }
+	})
+}
+
 export function getAllBrewIds() {
 	const fileNames = fs.readdirSync(brewsDirectory)
 
@@ -50,7 +57,8 @@ export function getAllBrewIds() {
 	})
 }
 
-export async function getBrewData(id) {
+export async function getBrewData(beer, batch) {
+	const id = `${beer}-${batch}`;
 	const fullPath = path.join(brewsDirectory, `${id}.md`)
 	const fileContents = fs.readFileSync(fullPath, 'utf8')
 
@@ -64,14 +72,21 @@ export async function getBrewData(id) {
 	return {
 		id,
 		contentHtml,
-		...(matterResult.data as {date: string; title: string; batch: number; beer_code: string })
+		...(matterResult.data as {
+			date: string; 
+			beer_name: string; 
+			batch: number; 
+			beer_code: string })
 	}
 }
 
 export async function getAllBeerCodes() {
 	const metaData = getAllBrewMetaData();
 	return metaData.map(m => {
-		return m.beer_code;
+		return m as {
+			beer_code: string;
+			batch: number;
+		};
 	});
 }
 

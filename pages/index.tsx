@@ -13,6 +13,7 @@ export default function Home({
 	allBrewsData: {
 		date: string
 		beer_name: string
+		beer_code: string
 		id: string
 		batch: number
 	}[]
@@ -23,11 +24,11 @@ export default function Home({
 	  		<title>{siteTitle}</title>
 	  	</Head>
 	  	<section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-	  		<h2 className={utilStyles.headingLg}>Brews</h2>
+	  		<h2 className={utilStyles.headingLg}>Latest brews</h2>
 	  		<ul className={utilStyles.list}>
-	  			{allBrewsData.map(({ id, date, beer_name, batch }) => (
+	  			{allBrewsData.map(({ id, date, beer_name, batch, beer_code }) => (
 					<li className={utilStyles.listItem} key={id}>
-						<Link href={`/brews/${id}`}>
+						<Link href={`/brews/${beer_code}/${batch}`}>
 							<a>{beer_name} #{batch}</a>
 						</Link>
 						<br />
