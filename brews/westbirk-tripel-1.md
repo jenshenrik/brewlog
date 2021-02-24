@@ -18,6 +18,10 @@ date: '2021-02-03'
 - Mangrove Jack's M31
 - Lallemand Voss Kviek
 
+#### Other ingredients
+- 2ml lactic acid (80%) - mash
+- 1.8g (a pinch?) table salt - mash
+
 11.5L urt @ 1.082 (target 1.079)
 
 SG 1.010 målt 10/2
