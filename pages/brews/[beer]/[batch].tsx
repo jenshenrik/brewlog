@@ -1,5 +1,4 @@
-import { getAllBeerCodes, getBrewData, getSortedBrewsData } from '../../../lib/brews'
-import { GetStaticProps, GetStaticPaths } from 'next'
+import { getBrewData, getAllBrews } from '../../../lib/brews'
 import Layout from '../../../components/layout'
 import Head from 'next/head'
 import Date from '../../../components/date'
@@ -32,7 +31,7 @@ export default function Brew({
 }
 
 export async function getStaticPaths() {
-    const brews = getSortedBrewsData()
+    const brews = getAllBrews()
     
     return {
       fallback: false,

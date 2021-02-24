@@ -7,10 +7,37 @@ import { groupBy } from './util'
 
 const brewsDirectory = path.join(process.cwd(), 'brews')
 
-export function getSortedBrewsData() {
-	// Get file names under /posts
+export function getAllBrews() {
+	const metaData = getAllBrewMetaData();
+	return metaData.map(m => {
+		return {
+			beer_code: m.beer_code,
+			batch: m.batch
+		}
+	})
+}
+
+export function getAllBeerCodes() {
+	const metaData = getAllBrewMetaData()
+	
+	return metaData.map(m => {
+		return {beer_code: m.beer_code, beer_name: m.beer_name}
+	})
+}
+
+export function getBrewsForBeer(beer_code) {
+	const metaData = getAllBrewMetaData().filter(m => m.beer_code == beer_code);
+	
+	return metaData.map(m => {
+		return {beer_code: m.beer_code, beer_name: m.beer_name, date: m.date, batch: m.batch}
+	})
+}
+
+// Used on front page
+export function getLatestBrewsData(size: number = 10) {
+	// Get file names under /brews
 	const fileNames = fs.readdirSync(brewsDirectory)
-	const allPostsData = fileNames.map(fileName => {
+	const allBrewsData = fileNames.map(fileName => {
 		// Remove '.md' from file name to get id
 		//const id = fileName.replace(/\.md$/, '')
 
@@ -18,7 +45,7 @@ export function getSortedBrewsData() {
 		const fullPath = path.join(brewsDirectory, fileName)
 		const fileContents = fs.readFileSync(fullPath, 'utf8')
 
-		// use gray-matter to parse the post metadata section
+		// use gray-matter to parse the brew metadata section
 		const matterResult = matter(fileContents)
 		const id = matterResult.data.beer_code + '-' + matterResult.data.batch
 		// Combine the data with the id
@@ -28,33 +55,14 @@ export function getSortedBrewsData() {
 		}
 	})
 
-	// Sort posts by date
-	return allPostsData.sort((a, b) => {
+	// Sort brews by date
+	return allBrewsData.sort((a, b) => {
 		if (a.date < b.date) {
 			return 1
 		} else {
 			return -1
 		}
-	})
-}
-
-export function getBeerCodesAndBatches() {
-	const metaData = getAllBrewMetaData();
-	return metaData.map(m => {
-		return {beer_code: m.beer_code, }
-	})
-}
-
-export function getAllBrewIds() {
-	const fileNames = fs.readdirSync(brewsDirectory)
-
-	return fileNames.map(fileName => {
-		return {
-			params: {
-				id: fileName.replace(/\.md$/, '')
-			}
-		}
-	})
+	}).slice(0, 10);
 }
 
 export async function getBrewData(beer, batch) {
@@ -80,6 +88,7 @@ export async function getBrewData(beer, batch) {
 	}
 }
 
+/*
 export async function getAllBeerCodes() {
 	const metaData = getAllBrewMetaData();
 	return metaData.map(m => {
@@ -94,7 +103,8 @@ export function getAllBrewsGroupedByBeerCode() {
 	let metaData = getAllBrewMetaData()
 	return groupBy(metaData, x => x.beer_code)
 }
-
+*/
+// util
 function getAllBrewMetaData() {
 	const fileNames = fs.readdirSync(brewsDirectory)
 	// Read markdown file as string
@@ -106,6 +116,7 @@ function getAllBrewMetaData() {
 		const matterResult = matter(fileContents)
 		return matterResult.data as {
 			beer_code: string;
+			beer_name: string;
 			date: string; 
 			title: string; 
 			batch: number;

@@ -5,10 +5,10 @@ import Link from 'next/link'
 import Date from '../components/date'
 import { GetStaticProps } from 'next'
 
-import { getSortedBrewsData, getAllBrewsGroupedByBeerCode } from '../lib/brews'
+import { getLatestBrewsData } from '../lib/brews'
 
 export default function Home({ 
-	allBrewsData 
+	allBrewsData: latestBrewsData 
 }: {
 	allBrewsData: {
 		date: string
@@ -26,7 +26,7 @@ export default function Home({
 	  	<section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
 	  		<h2 className={utilStyles.headingLg}>Latest brews</h2>
 	  		<ul className={utilStyles.list}>
-	  			{allBrewsData.map(({ id, date, beer_name, batch, beer_code }) => (
+	  			{latestBrewsData.map(({ id, date, beer_name, batch, beer_code }) => (
 					<li className={utilStyles.listItem} key={id}>
 						<Link href={`/brews/${beer_code}/${batch}`}>
 							<a>{beer_name} #{batch}</a>
@@ -44,7 +44,7 @@ export default function Home({
 }
 
 export const getStaticProps: GetStaticProps = async () => {
-	const allBrewsData = getSortedBrewsData();
+	const allBrewsData = getLatestBrewsData();
 	
 	return {
 		props: {
