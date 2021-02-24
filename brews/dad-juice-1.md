@@ -1,32 +1,33 @@
 ---
-beer_name: 'Pam Grier'
-beer_code: 'pam-grier'
-batch: 2
+beer_name: 'Dad Juice'
+beer_code: 'dad-juice'
+batch: 1
 date: '2021-02-27'
 ---
 
-Pam Grier, american brown ale based on Mikkeler's Jackie Brown.
+Grapefruit infused pale ale
 
 #### Grist
-- 1/2 mængde malt fra Jackie Brown opskrift
-- 2500g pils (Castle, 3 EBC)
-- 300g brown malt (Crisp, 120 EBC)
-- 300g Münich I (Castle, 25 EBC)
-- 300g Flaked torrified oats (Crisp, 5 EBC)
-- 200g Crystal malt (Home roasted, estimated 150 EBC)
-- 50g Carafa Special II (1000 EBC)
+- 1900g pils (Castle, 3 EBC)
+- 715g Flaked oats (Storebought, ? EBC)
+- 100g Crystal malt (Home roasted, estimated 150 EBC)
 
 #### Hops
-- 18g Nugget @ 60min
-- 18g Centennial @ 5min
-- 18g Amarillo dryhop
+- 7g Magnum @ 60min
+- 14g Amarillo @ 5min
+- 14g Mosaic @ 5min
+- 14g Amarillo dryhop
+- 14g Mosaic dryhop
 
 #### Yeast
-- Wyeast 1968
+- Mangrove Jack's M44 (US West Coast)
 
 #### Other ingredients
 - 3.5ml lactic acid (80%) - mash
-- 1.8g (a pinch?) table salt - mash
+- 0.5g (a pinch?) table salt - mash
+- 0.9g (a pinch?) CaSO4 - mash
+- 0.5g (a pinch?) CaCl2 - mash
+- 500ml frozen grapefruit juice - cooldown
 
 ### Notes
 

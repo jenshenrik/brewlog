@@ -8,7 +8,6 @@ date: '2021-02-27'
 Pam Grier, american brown ale based on Mikkeler's Jackie Brown.
 
 #### Grist
-- 1/2 mængde malt fra Jackie Brown opskrift
 - 2500g pils (Castle, 3 EBC)
 - 300g brown malt (Crisp, 120 EBC)
 - 300g Münich I (Castle, 25 EBC)
