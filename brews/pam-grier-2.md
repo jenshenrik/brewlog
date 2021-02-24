@@ -5,7 +5,7 @@ batch: 2
 date: '2021-02-27'
 ---
 
-Pam Grier, american brown ale based on Mikkeler's Jackie Brown.
+Pam Grier, american brown ale based on Mikkeller's Jackie Brown.
 
 #### Grist
 - 2500g pils (Castle, 3 EBC)

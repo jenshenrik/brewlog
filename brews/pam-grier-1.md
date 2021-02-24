@@ -5,7 +5,7 @@ batch: 1
 date: '2021-01-29'
 ---
 
-Pam Grier, american brown ale based on Mikkeler's Jackie Brown.
+Pam Grier, american brown ale based on Mikkeller's Jackie Brown.
 
 #### Grist
 - 1/2 mængde malt fra Jackie Brown opskrift

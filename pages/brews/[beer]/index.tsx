@@ -24,7 +24,7 @@ export default function Beer({
 				<h1 className={utilStyles.headingXl}>{brews[0].beer_name}</h1>
         <ul className={utilStyles.list}>
 	  			{brews.map(({ date, beer_name, batch, beer_code }) => (
-					<li className={utilStyles.listItem} key={batch}>
+					<li className={utilStyles.listItem} key={`${beer_code}-${batch}`}>
 						<Link href={`/brews/${beer_code}/${batch}`}>
 							<a>{beer_name} #{batch}</a>
 						</Link>

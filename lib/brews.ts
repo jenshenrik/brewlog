@@ -3,7 +3,6 @@ import path from 'path'
 import matter from 'gray-matter'
 import remark from 'remark'
 import html from 'remark-html'
-import { groupBy } from './util'
 
 const brewsDirectory = path.join(process.cwd(), 'brews')
 
@@ -21,7 +20,10 @@ export function getAllBeerCodes() {
 	const metaData = getAllBrewMetaData()
 	
 	return metaData.map(m => {
-		return {beer_code: m.beer_code, beer_name: m.beer_name}
+		return {
+			beer_code: m.beer_code, 
+			beer_name: m.beer_name
+		}
 	})
 }
 
@@ -29,11 +31,14 @@ export function getBrewsForBeer(beer_code) {
 	const metaData = getAllBrewMetaData().filter(m => m.beer_code == beer_code);
 	
 	return metaData.map(m => {
-		return {beer_code: m.beer_code, beer_name: m.beer_name, date: m.date, batch: m.batch}
+		return {
+			beer_code: m.beer_code, 
+			beer_name: m.beer_name, 
+			date: m.date, 
+			batch: m.batch}
 	})
 }
 
-// Used on front page
 export function getLatestBrewsData(size: number = 10) {
 	// Get file names under /brews
 	const fileNames = fs.readdirSync(brewsDirectory)
@@ -49,9 +54,11 @@ export function getLatestBrewsData(size: number = 10) {
 		const matterResult = matter(fileContents)
 		const id = matterResult.data.beer_code + '-' + matterResult.data.batch
 		// Combine the data with the id
-		return {
-			id,
-			...(matterResult.data as {date: string; beer_name: string; batch: number; beer_code: string })
+		return matterResult.data as {
+			date: string; 
+			beer_name: string; 
+			batch: number; 
+			beer_code: string 
 		}
 	})
 
@@ -88,22 +95,6 @@ export async function getBrewData(beer, batch) {
 	}
 }
 
-/*
-export async function getAllBeerCodes() {
-	const metaData = getAllBrewMetaData();
-	return metaData.map(m => {
-		return m as {
-			beer_code: string;
-			batch: number;
-		};
-	});
-}
-
-export function getAllBrewsGroupedByBeerCode() {
-	let metaData = getAllBrewMetaData()
-	return groupBy(metaData, x => x.beer_code)
-}
-*/
 // util
 function getAllBrewMetaData() {
 	const fileNames = fs.readdirSync(brewsDirectory)
@@ -114,13 +105,14 @@ function getAllBrewMetaData() {
 
 		// use gray-matter to parse the post metadata section
 		const matterResult = matter(fileContents)
-		return matterResult.data as {
+		return {
+			fileName,
+			...(matterResult.data as {
 			beer_code: string;
 			beer_name: string;
-			date: string; 
-			title: string; 
+			date: string;
 			batch: number;
-		}
+		})}
 	})
 }
 
