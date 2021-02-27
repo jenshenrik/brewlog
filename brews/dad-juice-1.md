@@ -2,7 +2,7 @@
 beer_name: 'Dad Juice'
 beer_code: 'dad-juice'
 batch: 1
-date: '2021-02-27'
+date: '2021-02-26'
 ---
 
 Grapefruit infused pale ale
@@ -30,7 +30,15 @@ Grapefruit infused pale ale
 - 500ml frozen grapefruit juice - cooldown
 
 ### Notes
+**Mash:** Mashed in at 67°C, 8.25L. Salts and lactic acid added. Mash started at approx. 68°C. Mashed out at approx. 63°C after one hour. Almost 5L first runnings collected.
 
+**Sparge:** Batch sparged with 10.5L of water approx. 76°C. 11.4L second runnings collected.
+
+BG approx. 1.042 against calculated 1.036. Mash efficiency adjusted to 80% (previously 68%).
+
+12L wort collected, yeast pitched at about 20°C. FG 1.050. 
+
+FG landed on what was calculated not accounting for the juice. Seeing as the FG was low and the yield was high, the boil-off rate was probably off. Boiling cut off a couple of times because pot temp. was set too low. This is likely the cause. As efficiency was higher than expected this means it's probably going to be close to expected anyways.
 
 ### Bottling
 
