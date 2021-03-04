@@ -34,7 +34,9 @@ Pam Grier, american brown ale based on Mikkeller's Jackie Brown.
 
 BG approx. 1.044 (1.040 at 35°C) vs. expected 1.049. Looks very dark and smells roasty. Probably shouldn't have doubled the amount of Carafa.
 
-Just shy of 12L wort collected, yeast pitched at about 20°C. FG 1.060. 
+Just shy of 12L wort collected, yeast pitched at about 20°C. OG 1.060.
+
+Gravity measured at 1.012 4/3.
 
 
 ### Bottling
