@@ -8,12 +8,12 @@ date: '2021-02-27'
 Pam Grier, american brown ale based on Mikkeller's Jackie Brown.
 
 #### Grist
-- 2500g pils (Castle, 3 EBC)
+- 2000g pils (Castle, 3 EBC)
 - 300g brown malt (Crisp, 120 EBC)
 - 300g Münich I (Castle, 25 EBC)
 - 300g Flaked torrified oats (Crisp, 5 EBC)
 - 200g Crystal malt (Home roasted, estimated 150 EBC)
-- 50g Carafa Special II (1000 EBC)
+- 100g Carafa Special II (1000 EBC)
 
 #### Hops
 - 18g Nugget @ 60min
@@ -24,10 +24,17 @@ Pam Grier, american brown ale based on Mikkeller's Jackie Brown.
 - Wyeast 1968
 
 #### Other ingredients
-- 3.5ml lactic acid (80%) - mash
-- 1.8g (a pinch?) table salt - mash
+- 2ml lactic acid (80%) - mash
+- 1.8g (a pinch? Two?) table salt - mash
 
 ### Notes
+**Mash:** Mashed in at 68°C, 9.75L. Salts and lactic acid added. Mash started at approx. 70°C. Dropped to 68°C after a couple of minutes. Temp. down to 64°C after about 25 minutes, so pot briefly turned on. Overshot and raised it to 71°C. Left lid off and stirred to bring down to 68°C. Mashed out at approx. 65°C after 45 minutes. 4.5L first runnings collected.
+
+**Sparge:** Batch sparged with 9.25L of water approx. 76°C. 11.5L second runnings collected.
+
+BG approx. 1.044 (1.040 at 35°C) vs. expected 1.049. Looks very dark and smells roasty. Probably shouldn't have doubled the amount of Carafa.
+
+Just shy of 12L wort collected, yeast pitched at about 20°C. FG 1.060. 
 
 
 ### Bottling
