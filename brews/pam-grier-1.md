@@ -8,7 +8,6 @@ date: '2021-01-29'
 Pam Grier, american brown ale based on Mikkeller's Jackie Brown.
 
 #### Grist
-- 1/2 mængde malt fra Jackie Brown opskrift
 - 1600g pils (Castle, 3 EBC)
 - 300g brown malt (Crisp, 120 EBC)
 - 300g Caramel Münich I (BESTMALTZ, 90 EBC)
@@ -29,9 +28,9 @@ Pam Grier, american brown ale based on Mikkeller's Jackie Brown.
 ### Notes
 Basically no-chill. Yeast pitched 30/1 around noon.
 
-FG 1.012-1.013 målt 5/2
+FG 1.012-1.013 measured 5/2
 
-Antaget OG 1.060. Brewfather udregner 1.054
+Forgot to note OG. Recipe stated 1.060. Brewfather calculated 1.054. Efficiency was low, hence the DME, so assume Brewfather is correct.
 
 ### Bottling
 10L bottled on 7/2 using 67g DME for carbonation.
