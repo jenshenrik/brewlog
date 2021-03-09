@@ -38,6 +38,9 @@ Just shy of 12L wort collected, yeast pitched at about 20°C. OG 1.060.
 
 Gravity measured at 1.012 4/3.
 
+Swirled a couple of times in an attempt to rouse yeast 5/3-6/3.
+
+Put in the basement for cold crashing 9/3.
 
 ### Bottling
 

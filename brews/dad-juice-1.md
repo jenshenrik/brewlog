@@ -40,6 +40,12 @@ BG approx. 1.042 against calculated 1.036. Mash efficiency adjusted to 80% (prev
 
 FG landed on what was calculated not accounting for the juice. Seeing as the FG was low and the yield was high, the boil-off rate was probably off. Boiling cut off a couple of times because pot temp. was set too low. This is likely the cause. As efficiency was higher than expected this means it's probably going to be close to expected anyways.
 
+Had a small blowout 28/2.
+
+Gravity measured at <1.010 4/3.
+
+Put in the basement for cold crashing 9/3.
+
 ### Bottling
 
 
