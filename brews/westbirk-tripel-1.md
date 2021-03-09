@@ -29,9 +29,10 @@ Tripel recipe based on David Heath's co-fermentation tripel. [Source (Youtube)](
 SG 1.010 measured 10/2
 FG 1.010-08 measured 14/2. Put in basement for cold crashing.
 
+### Bottling
 Bottled 17/2. 70g sugar and 2dL boiled for 5 minutes and added to 10.5L beer.
 
-NOTER:
+## Tasting notes
 19/2: Lightly carbonated. Heavy banana aroma. Maybe more of a saison than tripel?
 
 21/2: Lightly carbonated still. Much less banana aroma. More of a balanced, but quite heavily spicy flavour.
