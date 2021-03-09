@@ -5,7 +5,7 @@ batch: 1
 date: '2021-02-03'
 ---
 
-Tripel recipe based on David Heath's co-fermentation tripel [https://www.youtube.com/watch?v=8LFIkTovJ5I].
+Tripel recipe based on David Heath's co-fermentation tripel. [Source (Youtube)](https://www.youtube.com/watch?v=8LFIkTovJ5I).
 
 #### Grist
 - 3800g pils (Castle, 3 EBC)
