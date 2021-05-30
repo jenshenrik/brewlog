@@ -40,7 +40,7 @@ Gravity measured at 1.012 4/3.
 
 Swirled a couple of times in an attempt to rouse yeast 5/3-6/3.
 
-Put in the basement for cold crashing 9/3.
+Put in the basement for cold crashing 9/3. Dryhops added 10/3.
 
 ### Bottling
 

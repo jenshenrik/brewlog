@@ -44,7 +44,7 @@ Had a small blowout 28/2.
 
 Gravity measured at <1.010 4/3.
 
-Put in the basement for cold crashing 9/3.
+Put in the basement for cold crashing 9/3. Dryhops added 10/3.
 
 ### Bottling
 
